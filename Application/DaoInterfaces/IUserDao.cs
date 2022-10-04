@@ -1,6 +1,7 @@
 ﻿using Domain;
 
 namespace Application.DaoInterfaces;
+//hejMerethe
 
 public interface IUserDao
 {
