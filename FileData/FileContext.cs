@@ -12,8 +12,24 @@ public class FileContext
     {
         get
         {
-            LoadData();
+            LazyLoadData();
             return dataContainer!.Users;
+        }
+    }
+
+    public ICollection<Post> Posts
+    {
+        get
+        {
+            LazyLoadData();
+            return dataContainer!.Posts;
+        }
+    }
+    private void LazyLoadData()
+    {
+        if (dataContainer == null)
+        {
+            LoadData();
         }
     }
 
@@ -25,7 +41,8 @@ public class FileContext
         {
             dataContainer = new ()
             {
-                Users = new List<User>()
+                Users = new List<User>(),
+                Posts = new List<Post>()
             };
             return;
         }
