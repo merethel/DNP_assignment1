@@ -208,19 +208,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\meret\\.nuget\\packages\\": {}
+    "C:\\Users\\soren\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\soren\\DNP_assignment1\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\WebAPI\\WebAPI.csproj",
-      "packagesPath": "C:\\Users\\meret\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\soren\\DNP_assignment1\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\soren\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\soren\\DNP_assignment1\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\meret\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\soren\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
