@@ -20,8 +20,10 @@ public class PostLogic : IPostLogic
     public async Task<Post> CreateAsync(CreatePostDto postDto)
     {
        ValidateData(postDto);
-
+       
        User? user = await UserDao.GetByIdAsync(postDto.Owner);
+       
+       
        Post toCreate = new Post
        {
            Owner = user,

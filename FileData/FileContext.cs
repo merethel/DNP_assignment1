@@ -12,7 +12,7 @@ public class FileContext
     {
         get
         {
-            LazyLoadData();
+            LoadData();
             return dataContainer!.Users;
         }
     }
@@ -21,15 +21,8 @@ public class FileContext
     {
         get
         {
-            LazyLoadData();
-            return dataContainer!.Posts;
-        }
-    }
-    private void LazyLoadData()
-    {
-        if (dataContainer == null)
-        {
             LoadData();
+            return dataContainer!.Posts;
         }
     }
 
@@ -39,7 +32,7 @@ public class FileContext
         
         if (!File.Exists(filePath))
         {
-            dataContainer = new ()
+            dataContainer = new()
             {
                 Users = new List<User>(),
                 Posts = new List<Post>()

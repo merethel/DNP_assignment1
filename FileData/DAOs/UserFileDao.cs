@@ -7,39 +7,39 @@ namespace FileData.DAOs;
 
 public class UserFileDao : IUserDao
 {
-    private readonly FileContext context;
+    private readonly FileContext Context;
 
     public UserFileDao(FileContext context)
     {
-        this.context = context;
+        Context = context;
     }
 
     public Task<User> CreateAsync(User user)
     {
         int userId = 1;
-        if (context.Users.Any())
+        if (Context.Users.Any())
         {
-            userId = context.Users.Max(u => u.Id);
+            userId = Context.Users.Max(u => u.Id);
             userId++;
         }
 
         user.Id = userId;
 
-        context.Users.Add(user);
-        context.SaveChanges();
+        Context.Users.Add(user);
+        Context.SaveChanges();
 
         return Task.FromResult(user);
     }
     
     public Task<User?> GetByUsernameAsync(string username)
     {
-        User? user = context.Users.FirstOrDefault(u => u.Username.Equals(username,StringComparison.OrdinalIgnoreCase));
+        User? user = Context.Users.FirstOrDefault(u => u.Username.Equals(username,StringComparison.OrdinalIgnoreCase));
         return Task.FromResult(user);
     }
 
     public Task<User?> GetByIdAsync(int id)
     {
-        User? existing = context.Users.FirstOrDefault(u => u.Id == id);
+        User? existing = Context.Users.FirstOrDefault(u => u.Id == id);
         return Task.FromResult(existing);
     }
 }
