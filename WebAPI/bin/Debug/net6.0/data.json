@@ -1,0 +1,21 @@
+{
+  "Users": [
+    {
+      "Username": "Jakob",
+      "Id": 1,
+      "Password": "Jakob123"
+    }
+  ],
+  "Posts": [
+    {
+      "Title": "Jakob har f\u00E5et en kat",
+      "BodyText": "Den er s\u00F8d",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123"
+      },
+      "Id": 1
+    }
+  ]
+}

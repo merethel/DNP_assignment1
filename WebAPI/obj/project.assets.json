@@ -262,19 +262,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\meret\\.nuget\\packages\\": {}
+    "C:\\Users\\carin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\carin\\Downloads\\DNP_assignment1-3_CreatePost_Merethe\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\WebAPI\\WebAPI.csproj",
-      "packagesPath": "C:\\Users\\meret\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\carin\\Downloads\\DNP_assignment1-3_CreatePost_Merethe\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\carin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carin\\Downloads\\DNP_assignment1-3_CreatePost_Merethe\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\meret\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\carin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -286,11 +286,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\Application\\Application.csproj"
+            "C:\\Users\\carin\\Downloads\\DNP_assignment1-3_CreatePost_Merethe\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\carin\\Downloads\\DNP_assignment1-3_CreatePost_Merethe\\Application\\Application.csproj"
             },
-            "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\FileData\\FileData.csproj": {
-              "projectPath": "C:\\Users\\meret\\Desktop\\Softwareingeniør\\3. semester\\DNP\\Projekter\\DNP_assignment1\\FileData\\FileData.csproj"
+            "C:\\Users\\carin\\Downloads\\DNP_assignment1-3_CreatePost_Merethe\\FileData\\FileData.csproj": {
+              "projectPath": "C:\\Users\\carin\\Downloads\\DNP_assignment1-3_CreatePost_Merethe\\FileData\\FileData.csproj"
             }
           }
         }
@@ -316,7 +316,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -328,7 +329,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
