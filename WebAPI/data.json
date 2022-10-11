@@ -4,6 +4,11 @@
       "Username": "Jakob",
       "Id": 1,
       "Password": "Jakob123"
+    },
+    {
+      "Username": "Bob",
+      "Id": 2,
+      "Password": "bobsen123"
     }
   ],
   "Posts": [

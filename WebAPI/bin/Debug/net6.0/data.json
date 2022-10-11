@@ -4,6 +4,11 @@
       "Username": "Jakob",
       "Id": 1,
       "Password": "Jakob123"
+    },
+    {
+      "Username": "Bob",
+      "Id": 2,
+      "Password": "bobsen123"
     }
   ],
   "Posts": [
@@ -16,6 +21,16 @@
         "Password": "Jakob123"
       },
       "Id": 1
+    },
+    {
+      "Title": "Jakobs kat er d\u00F8d",
+      "BodyText": "Det var \u00E6rgeligt",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123"
+      },
+      "Id": 2
     }
   ]
 }
