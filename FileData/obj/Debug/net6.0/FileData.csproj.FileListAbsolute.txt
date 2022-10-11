@@ -46,6 +46,6 @@ C:\Users\soren\DNP_assignment1\FileData\obj\Debug\net6.0\FileData.AssemblyInfo.c
 C:\Users\soren\DNP_assignment1\FileData\obj\Debug\net6.0\FileData.csproj.CoreCompileInputs.cache
 C:\Users\soren\DNP_assignment1\FileData\obj\Debug\net6.0\FileData.csproj.CopyComplete
 C:\Users\soren\DNP_assignment1\FileData\obj\Debug\net6.0\FileData.dll
-C:\Users\soren\DNP_assignment1\FileData\obj\Debug\net6.0\refint\FileData.dll
 C:\Users\soren\DNP_assignment1\FileData\obj\Debug\net6.0\FileData.pdb
 C:\Users\soren\DNP_assignment1\FileData\obj\Debug\net6.0\ref\FileData.dll
+C:\Users\soren\DNP_assignment1\FileData\bin\Debug\net6.0\ref\FileData.dll

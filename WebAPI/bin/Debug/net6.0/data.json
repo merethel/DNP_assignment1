@@ -9,6 +9,11 @@
       "Username": "Bob",
       "Id": 2,
       "Password": "bobsen123"
+    },
+    {
+      "Username": "bobsen",
+      "Id": 3,
+      "Password": "bobsen123"
     }
   ],
   "Posts": [
@@ -31,6 +36,26 @@
         "Password": "Jakob123"
       },
       "Id": 2
+    },
+    {
+      "Title": "Bob har spidst en is",
+      "BodyText": "Isen smeltede fordi det var alt for varmt udenfor",
+      "Owner": {
+        "Username": "bobsen",
+        "Id": 3,
+        "Password": "bobsen123"
+      },
+      "Id": 3
+    },
+    {
+      "Title": "Bob har spidst en is",
+      "BodyText": "Isen smeltede fordi det var alt for varmt udenfor",
+      "Owner": {
+        "Username": "bobsen",
+        "Id": 3,
+        "Password": "bobsen123"
+      },
+      "Id": 4
     }
   ]
 }

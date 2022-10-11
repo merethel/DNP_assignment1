@@ -40,6 +40,6 @@ C:\Users\soren\DNP_assignment1\Application\obj\Debug\net6.0\Application.Assembly
 C:\Users\soren\DNP_assignment1\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
 C:\Users\soren\DNP_assignment1\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
 C:\Users\soren\DNP_assignment1\Application\obj\Debug\net6.0\Application.dll
-C:\Users\soren\DNP_assignment1\Application\obj\Debug\net6.0\refint\Application.dll
 C:\Users\soren\DNP_assignment1\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\soren\DNP_assignment1\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\soren\DNP_assignment1\Application\bin\Debug\net6.0\ref\Application.dll

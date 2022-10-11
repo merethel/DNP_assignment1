@@ -163,7 +163,7 @@ C:\Users\soren\DNP_assignment1\WebAPI\obj\Debug\net6.0\staticwebassets.developme
 C:\Users\soren\DNP_assignment1\WebAPI\obj\Debug\net6.0\scopedcss\bundle\WebAPI.styles.css
 C:\Users\soren\DNP_assignment1\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CopyComplete
 C:\Users\soren\DNP_assignment1\WebAPI\obj\Debug\net6.0\WebAPI.dll
-C:\Users\soren\DNP_assignment1\WebAPI\obj\Debug\net6.0\refint\WebAPI.dll
 C:\Users\soren\DNP_assignment1\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\soren\DNP_assignment1\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\soren\DNP_assignment1\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\soren\DNP_assignment1\WebAPI\bin\Debug\net6.0\ref\WebAPI.dll

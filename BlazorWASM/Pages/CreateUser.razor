@@ -17,7 +17,7 @@
         }
     </div>
     <div class="button-row">
-        <button @onclick="Create" class="acceptbtn">Create</button>
+        <button @onclick="Create" disabled="@(string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))" class="acceptbtn">Create</button>
     </div>
 </div>
 
@@ -44,7 +44,7 @@
         catch (Exception e)
         {
             Console.WriteLine(e);
-            msg = e.Message;
+            msg = "hej her " +e.Message;
             color = "red";
         }
     }
