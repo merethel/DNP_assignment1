@@ -37,6 +37,23 @@ public class PostLogic : IPostLogic
 
     }
 
+    public Task<IEnumerable<Post>> GetAsync()
+    {
+        return PostDao.GetAsync();
+    }
+
+    public async Task<Post?> GetById(int id)
+    {
+        Post post = await PostDao.GetById(id);
+
+        if (post == null)
+        {
+            throw new Exception($"Post with id: {id} does not exist");
+        }
+
+        return post;
+    }
+
     private static void ValidateData(CreatePostDto postDto)
     {
         if (postDto.Owner == null)
