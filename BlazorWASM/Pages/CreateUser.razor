@@ -33,8 +33,7 @@
 
         try
         {
-            Console.WriteLine("hej");
-            msg = "hej";
+            msg = "";
             await userService.Create(new CreateUserDto(username, password));
             username = "";
             password = "";
@@ -44,7 +43,7 @@
         catch (Exception e)
         {
             Console.WriteLine(e);
-            msg = "hej her " +e.Message;
+            msg = e.Message;
             color = "red";
         }
     }
