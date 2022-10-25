@@ -86,6 +86,17 @@
         "SecurityLevel": 1
       },
       "Id": 5
+    },
+    {
+      "Title": "Ada loves birds",
+      "BodyText": "I wish i had a bird but i dont, this is very sad :(",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123",
+        "SecurityLevel": 1
+      },
+      "Id": 6
     }
   ]
 }

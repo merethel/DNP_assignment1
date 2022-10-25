@@ -1,0 +1,61 @@
+﻿@page "/"
+@page "/ViewPosts"
+@using Domain
+@using HttpClients.ClientInterfaces
+@inject IPostService PostService
+@inject NavigationManager navMgr
+
+<h3 style="text-align: center">Overview of all posts</h3>
+
+@if (!string.IsNullOrEmpty(msg))
+{
+    <div>
+        <span>@msg</span>
+    </div>
+}
+
+@if (posts == null)
+{
+    <span>Loading..</span>
+}
+else if (!posts.Any())
+{
+    <span>No posts to be found</span>
+}
+else
+{
+    <div>
+        @foreach (Post post in posts)
+        {
+            <div class="postbox" @onclick="() => NavigateToPost(post)">
+                <p>@post.Title</p>
+                <label>posted by: @post.Owner.Username</label>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private IEnumerable<Post>? posts;
+    private string msg = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        try
+        {
+            posts = await PostService.GetPosts();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+    private void NavigateToPost(Post post)
+    {
+        navMgr.NavigateTo("/ViewSinglePost/" + post.Id);
+    }
+    
+}

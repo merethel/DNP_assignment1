@@ -8,7 +8,6 @@ namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-[Authorize]
 
 public class PostController : ControllerBase
 {

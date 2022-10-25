@@ -34,4 +34,40 @@ public class PostService : IPostService
 
         return post;
     }
+
+    public async Task<IEnumerable<Post>> GetPosts()
+    {
+        string uri = "/post";
+
+        HttpResponseMessage response = await Client.GetAsync(uri);
+        string result = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(result);
+        }
+
+        IEnumerable<Post> posts = JsonSerializer.Deserialize<IEnumerable<Post>>(result, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+        return posts;
+    }
+
+    public async Task<Post> GetPostById(int id)
+    {
+        string uri = "/post";
+
+        HttpResponseMessage response = await Client.GetAsync(uri + "/" + id);
+        string result = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(result);
+        }
+
+        Post post = JsonSerializer.Deserialize<Post>(result, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+        return post;
+    }
 }

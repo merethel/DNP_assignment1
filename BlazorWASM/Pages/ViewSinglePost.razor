@@ -1,0 +1,52 @@
+﻿@page "/ViewSinglePost"
+@page "/ViewSinglePost/{PostId:int}"
+@using Domain
+@using HttpClients.ClientInterfaces
+@inject IPostService PostService
+
+<h3>ViewSinglePost</h3>
+
+@if (!string.IsNullOrEmpty(msg))
+{
+    <div>
+        <span>@msg</span>
+    </div>
+}
+
+@if (post == null)
+{
+    <span>Loading..</span>
+}
+
+else
+{
+    <div>
+        <div>
+            <label>@post.Title</label>
+            <textarea>@post.BodyText</textarea>
+            </div>
+    </div>
+}
+
+@code {
+    [Parameter] 
+    public int postId { get; set; }
+    
+    private string msg = "";
+    private Post post;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        try
+        {
+            post = await PostService.GetPostById(postId);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+    
+}
