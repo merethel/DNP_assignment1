@@ -31,7 +31,23 @@ public class UserLogic : IUserLogic
         
         return created;
     }
-    
+
+    public async Task<User> ValidateUser(string username, string password)
+    {
+        User? existingUser = await userDao.GetByUsernameAsync(username);
+        if (existingUser == null)
+        {
+            throw new Exception($"User by name {username} does not exist");
+        }
+
+        if (!existingUser.Password.Equals(password))
+        {
+            throw new Exception("Password is not correct");
+        }
+
+        return await Task.FromResult(existingUser);
+    }
+
 
     private static void ValidateData(CreateUserDto userToCreate)
     {

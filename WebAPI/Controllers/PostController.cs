@@ -1,12 +1,14 @@
 ﻿using Application.LogicInterfaces;
 using Domain;
 using Domain.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[Authorize]
 
 public class PostController : ControllerBase
 {
@@ -32,7 +34,7 @@ public class PostController : ControllerBase
         }
     }
 
-    [HttpGet]
+    [HttpGet, AllowAnonymous]
     public async Task<ActionResult<IEnumerable<Post>>> GetAsync()
     {
         try
@@ -47,7 +49,7 @@ public class PostController : ControllerBase
         }
     }
 
-    [HttpGet("{id:int}")]
+    [HttpGet("{id:int}"), AllowAnonymous]
     public async Task<ActionResult<Post>> GetById([FromRoute] int id)
     {
         try
@@ -61,4 +63,5 @@ public class PostController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+
 }

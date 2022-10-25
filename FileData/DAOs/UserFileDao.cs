@@ -23,6 +23,10 @@ public class UserFileDao : IUserDao
             userId++;
         }
 
+        int userSecurityLevel = 1;
+
+        user.SecurityLevel = userSecurityLevel;
+        
         user.Id = userId;
 
         Context.Users.Add(user);

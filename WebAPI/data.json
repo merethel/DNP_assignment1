@@ -3,27 +3,32 @@
     {
       "Username": "Jakob",
       "Id": 1,
-      "Password": "Jakob123"
+      "Password": "Jakob123",
+      "SecurityLevel": 0
     },
     {
       "Username": "Bob",
       "Id": 2,
-      "Password": "bobsen123"
+      "Password": "bobsen123",
+      "SecurityLevel": 0
     },
     {
       "Username": "bobsen",
       "Id": 3,
-      "Password": "bobsen123"
+      "Password": "bobsen123",
+      "SecurityLevel": 0
     },
     {
       "Username": "pernille",
       "Id": 4,
-      "Password": "bobsen123"
+      "Password": "bobsen123",
+      "SecurityLevel": 0
     },
     {
-      "Username": "hjkl\u00E6",
+      "Username": "ibsen",
       "Id": 5,
-      "Password": "xcvbnm,.-lkjb"
+      "Password": "ibsen1234",
+      "SecurityLevel": 1
     }
   ],
   "Posts": [
@@ -33,7 +38,8 @@
       "Owner": {
         "Username": "Jakob",
         "Id": 1,
-        "Password": "Jakob123"
+        "Password": "Jakob123",
+        "SecurityLevel": 0
       },
       "Id": 1
     },
@@ -43,7 +49,8 @@
       "Owner": {
         "Username": "Jakob",
         "Id": 1,
-        "Password": "Jakob123"
+        "Password": "Jakob123",
+        "SecurityLevel": 0
       },
       "Id": 2
     },
@@ -53,7 +60,8 @@
       "Owner": {
         "Username": "bobsen",
         "Id": 3,
-        "Password": "bobsen123"
+        "Password": "bobsen123",
+        "SecurityLevel": 0
       },
       "Id": 3
     },
@@ -63,7 +71,8 @@
       "Owner": {
         "Username": "bobsen",
         "Id": 3,
-        "Password": "bobsen123"
+        "Password": "bobsen123",
+        "SecurityLevel": 0
       },
       "Id": 4
     }

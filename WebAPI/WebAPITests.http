@@ -1,0 +1,17 @@
+﻿// log in as ibsen
+POST https://localhost:7070/User/login
+Content-Type: application/json
+
+{ "Username" : "ibsen", "Password" : "ibsen1234" }
+###
+
+//create post without token
+GET https://localhost:7070/Post
+
+###
+
+//Create post with token
+GET https://localhost:7070/Post
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNWQ4YWI4My0xZDljLTQwNDktYmZmOS1iNmIwODUyMTBkZmUiLCJpYXQiOiIyNS0xMC0yMDIyIDA4OjU0OjA3IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Imlic2VuIiwiU2VjdXJpdHlMZXZlbCI6IjEiLCJleHAiOjE2NjY2OTE2NDcsImlzcyI6IkpXVEF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZUJsYXpvcldhc21DbGllbnQifQ.TGuAo_h5mg_AnpW7p9DRNhXn_8vWD1pFYRFx78LZy-e4Gz1aXciqLmYRqy1Uw9eJQ4IM1q0dVkqf_UrwKKtAxg
+
+
