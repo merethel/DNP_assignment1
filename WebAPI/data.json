@@ -4,25 +4,25 @@
       "Username": "Jakob",
       "Id": 1,
       "Password": "Jakob123",
-      "SecurityLevel": 0
+      "SecurityLevel": 1
     },
     {
       "Username": "Bob",
       "Id": 2,
       "Password": "bobsen123",
-      "SecurityLevel": 0
+      "SecurityLevel": 1
     },
     {
       "Username": "bobsen",
       "Id": 3,
       "Password": "bobsen123",
-      "SecurityLevel": 0
+      "SecurityLevel": 1
     },
     {
       "Username": "pernille",
       "Id": 4,
       "Password": "bobsen123",
-      "SecurityLevel": 0
+      "SecurityLevel": 1
     },
     {
       "Username": "ibsen",
@@ -39,7 +39,7 @@
         "Username": "Jakob",
         "Id": 1,
         "Password": "Jakob123",
-        "SecurityLevel": 0
+        "SecurityLevel": 1
       },
       "Id": 1
     },
@@ -50,7 +50,7 @@
         "Username": "Jakob",
         "Id": 1,
         "Password": "Jakob123",
-        "SecurityLevel": 0
+        "SecurityLevel": 1
       },
       "Id": 2
     },
@@ -61,20 +61,31 @@
         "Username": "bobsen",
         "Id": 3,
         "Password": "bobsen123",
-        "SecurityLevel": 0
+        "SecurityLevel": 1
       },
       "Id": 3
     },
     {
-      "Title": "Bob har spidst en is",
+      "Title": "Bob har spist en is",
       "BodyText": "Isen smeltede fordi det var alt for varmt udenfor",
       "Owner": {
         "Username": "bobsen",
         "Id": 3,
         "Password": "bobsen123",
-        "SecurityLevel": 0
+        "SecurityLevel": 1
       },
       "Id": 4
+    },
+    {
+      "Title": "sfdgnhgrfd",
+      "BodyText": "dfghghgfd",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123",
+        "SecurityLevel": 1
+      },
+      "Id": 5
     }
   ]
 }

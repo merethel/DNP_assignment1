@@ -1,0 +1,76 @@
+﻿@page "/CreatePost"
+@using HttpClients.ClientInterfaces
+@using Domain.DTOs
+@inject IPostService postService
+
+<AuthorizeView>
+
+    <div class="card">
+        <h3>Create Post</h3>
+        @*<div class="form-group field">
+            <label>Title:</label>
+            <input type="text" @bind="title" @bind:event="oninput"/>
+        </div>
+
+        <div class="form-group field">
+            <label>Content:</label>
+            <input type="text" @bind="body" @bind:event="oninput"/>
+        </div>
+                <div>
+                    <label>Owner: @context.User.Identity.Name</label>
+                </div>
+
+        <div class="button-row">
+            <button @onclick="Create" disabled="@(string.IsNullOrEmpty(title) || string.IsNullOrEmpty(body))" class="acceptbtn">Create Post</button>
+        </div>
+                    @if (!string.IsNullOrEmpty(msg))
+                    {
+                        <label style="color: @color">@msg</label>
+                    }*@
+        
+        
+            <div class="form-group field">
+                <label>Title:</label>
+                <input type="text" @bind="title" @bind:event="oninput"/>
+                <label>Content:</label>
+                <input type="text" @bind="body" @bind:event="oninput"/>
+                @if (!string.IsNullOrEmpty(msg))
+                {
+                    <label style="color: @color">@msg</label>
+                }
+            </div>
+            <div class="button-row">
+                <button @onclick="Create" disabled="@(string.IsNullOrEmpty(title) || string.IsNullOrEmpty(body))" class="acceptbtn">Create</button>
+            </div>
+    </div>
+</AuthorizeView>
+
+@code {
+    private string title = "";
+    private string body = "";
+    private int owner = 1;
+
+    private string msg = "";
+    private string color = "";
+
+    private async Task Create()
+    {
+
+        try
+        {
+            msg = "";
+            await postService.CreatePost(new CreatePostDto(owner, title, body));
+            title = "";
+            body = "";
+            msg = "Post created!";
+            color = "green";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+            color = "red";
+        }
+    }
+
+}
