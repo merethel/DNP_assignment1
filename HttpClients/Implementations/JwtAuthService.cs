@@ -11,7 +11,7 @@ public class JwtAuthService : IAuthService
 {
     
     private readonly HttpClient Client;
-    
+
     public JwtAuthService(HttpClient client)
     {
         Client = client;
@@ -19,6 +19,7 @@ public class JwtAuthService : IAuthService
 
 
     public static string? Jwt { get; private set; } = "";
+    public static string? Username { get; private set; } = "";
 
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
     
@@ -43,6 +44,7 @@ public class JwtAuthService : IAuthService
 
         string token = responseContent;
         Jwt = token;
+        Username = username;
 
         ClaimsPrincipal principal = CreateClaimsPrincipal();
 
@@ -68,6 +70,7 @@ public class JwtAuthService : IAuthService
     public Task LogoutAsync()
     {
         Jwt = null;
+        Username = null;
         ClaimsPrincipal principal = new();
         OnAuthStateChanged.Invoke(principal);
         return Task.CompletedTask;

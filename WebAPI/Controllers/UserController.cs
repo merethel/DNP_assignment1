@@ -83,6 +83,7 @@ public class UserController : ControllerBase
             string token = GenerateJwt(user);
     
             return Ok(token);
+            
         }
         catch (Exception e)
         {

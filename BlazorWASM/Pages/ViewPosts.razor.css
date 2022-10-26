@@ -2,4 +2,7 @@
     border-style: solid;
     border: #000000;
     border-width: 5px;
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 10px;
 }

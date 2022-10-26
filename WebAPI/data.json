@@ -29,6 +29,12 @@
       "Id": 5,
       "Password": "ibsen1234",
       "SecurityLevel": 1
+    },
+    {
+      "Username": "JakobWasTaken",
+      "Id": 6,
+      "Password": "3103abcdefgh",
+      "SecurityLevel": 1
     }
   ],
   "Posts": [
@@ -97,6 +103,61 @@
         "SecurityLevel": 1
       },
       "Id": 6
+    },
+    {
+      "Title": "asndansdio",
+      "BodyText": "sdiajodsjioa",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123",
+        "SecurityLevel": 1
+      },
+      "Id": 7
+    },
+    {
+      "Title": "Der manglede et mellemrum",
+      "BodyText": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123",
+        "SecurityLevel": 1
+      },
+      "Id": 8
+    },
+    {
+      "Title": "nfadisfhs",
+      "BodyText": "joidsfajiofds",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123",
+        "SecurityLevel": 1
+      },
+      "Id": 9
+    },
+    {
+      "Title": "ibsen er tr\u00E6t",
+      "BodyText": "Ibsen er tr\u00E6t fordi han skrev o i stedet for O   : -   D",
+      "Owner": {
+        "Username": "ibsen",
+        "Id": 5,
+        "Password": "ibsen1234",
+        "SecurityLevel": 1
+      },
+      "Id": 10
+    },
+    {
+      "Title": "Jakob spiste en sandwhich",
+      "BodyText": "Den var t\u00F8r",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123",
+        "SecurityLevel": 1
+      },
+      "Id": 11
     }
   ]
 }

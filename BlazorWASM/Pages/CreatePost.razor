@@ -1,6 +1,8 @@
 ﻿@page "/CreatePost"
 @using HttpClients.ClientInterfaces
 @using Domain.DTOs
+@using HttpClients.Implementations
+@using BlazorWasm.Services
 @inject IPostService postService
 
 <AuthorizeView>
@@ -32,13 +34,15 @@
             <div class="form-group field">
                 <label>Title:</label>
                 <input type="text" @bind="title" @bind:event="oninput"/>
+            </div>    
+            <div>
                 <label>Content:</label>
                 <input type="text" @bind="body" @bind:event="oninput"/>
                 @if (!string.IsNullOrEmpty(msg))
                 {
                     <label style="color: @color">@msg</label>
                 }
-            </div>
+                </div>    
             <div class="button-row">
                 <button @onclick="Create" disabled="@(string.IsNullOrEmpty(title) || string.IsNullOrEmpty(body))" class="acceptbtn">Create</button>
             </div>
@@ -48,14 +52,15 @@
 @code {
     private string title = "";
     private string body = "";
-    private int owner = 1;
+    private string owner = "";
 
     private string msg = "";
     private string color = "";
 
     private async Task Create()
     {
-
+        owner = JwtAuthService.Username;
+        Console.WriteLine(owner);
         try
         {
             msg = "";

@@ -10,6 +10,8 @@ public class PostService : IPostService
 {
     private readonly HttpClient Client;
 
+    private static string? jwt;
+
     public PostService(HttpClient client)
     {
         Client = client;
@@ -17,9 +19,16 @@ public class PostService : IPostService
 
     public async Task<Post> CreatePost(CreatePostDto dto)
     {
+        jwt = JwtAuthService.Jwt;
         Console.WriteLine("HEEEEJ");
         Console.WriteLine(dto);
-        HttpResponseMessage response = await Client.PostAsJsonAsync("/Post", dto);
+        Console.WriteLine(jwt);
+        HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Post, "/Post");
+        requestMessage.Headers.Add("Authorization", "bearer " + jwt);
+        requestMessage.Content = JsonContent.Create(dto);
+        
+        
+        HttpResponseMessage response = await Client.SendAsync(requestMessage);
         string result = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)

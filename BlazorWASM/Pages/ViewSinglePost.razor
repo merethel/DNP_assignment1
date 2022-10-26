@@ -4,8 +4,6 @@
 @using HttpClients.ClientInterfaces
 @inject IPostService PostService
 
-<h3>ViewSinglePost</h3>
-
 @if (!string.IsNullOrEmpty(msg))
 {
     <div>
@@ -22,9 +20,12 @@ else
 {
     <div>
         <div>
-            <label>@post.Title</label>
-            <textarea>@post.BodyText</textarea>
-            </div>
+            <label><b>@post.Title</b></label>
+        </div>
+        <p>u/@post.Owner.Username</p>
+        <div>
+            <p>@post.BodyText</p>
+        </div>
     </div>
 }
 

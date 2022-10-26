@@ -21,7 +21,7 @@ public class PostLogic : IPostLogic
     {
        ValidateData(postDto);
        
-       User? user = await UserDao.GetByIdAsync(postDto.Owner);
+       User? user = await UserDao.GetByUsernameAsync(postDto.OwnerUsername);
        
        
        Post toCreate = new Post
@@ -56,7 +56,7 @@ public class PostLogic : IPostLogic
 
     private static void ValidateData(CreatePostDto postDto)
     {
-        if (postDto.Owner == null)
+        if (postDto.OwnerUsername == null)
         {
             throw new Exception("Post must have an owner");
         }

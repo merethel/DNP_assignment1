@@ -2,15 +2,15 @@
 
 public class CreatePostDto
 {
-    public int Owner { get; }
+    public string OwnerUsername { get; }
     
     public string Title { get; }
     
     public string BodyText { get; }
 
-    public CreatePostDto(int owner, string title, string bodyText)
+    public CreatePostDto(string ownerUsername, string title, string bodyText)
     {
-        Owner = owner;
+        OwnerUsername = ownerUsername;
         Title = title;
         BodyText = bodyText;
     }
