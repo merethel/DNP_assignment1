@@ -8,6 +8,11 @@ namespace EfcDataAccess.DAOs;
 public class EfcPostDao : IPostDao
 {
     private readonly RedditContext context;
+    
+    public EfcPostDao(RedditContext context)
+    {
+        this.context = context;
+    }
     public async Task<Post> CreateAsync(Post post)
     {
         EntityEntry<Post> added = await context.Posts.AddAsync(post);
@@ -24,7 +29,8 @@ public class EfcPostDao : IPostDao
 
     public async Task<Post> GetById(int id)
     {
-        Post? post = await context.Posts.FindAsync(id);
-        return post;
+        IQueryable<Post> posts = context.Posts.Include(post => post.Owner).AsQueryable();
+        Task<Post?> post = posts.FirstOrDefaultAsync(post => post.Id == id);
+        return post.Result;
     }
 }

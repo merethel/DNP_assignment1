@@ -35,6 +35,12 @@
       "Id": 6,
       "Password": "3103abcdefgh",
       "SecurityLevel": 1
+    },
+    {
+      "Username": "Troels",
+      "Id": 7,
+      "Password": "Troels123",
+      "SecurityLevel": 1
     }
   ],
   "Posts": [
@@ -158,6 +164,28 @@
         "SecurityLevel": 1
       },
       "Id": 11
+    },
+    {
+      "Title": "Jakob sucks",
+      "BodyText": "Jakob sucks very much",
+      "Owner": {
+        "Username": "Jakob",
+        "Id": 1,
+        "Password": "Jakob123",
+        "SecurityLevel": 1
+      },
+      "Id": 12
+    },
+    {
+      "Title": "Troels har en b\u00E5d",
+      "BodyText": "Troels b\u00E5d er ut\u00E6t",
+      "Owner": {
+        "Username": "Troels",
+        "Id": 7,
+        "Password": "Troels123",
+        "SecurityLevel": 1
+      },
+      "Id": 13
     }
   ]
 }

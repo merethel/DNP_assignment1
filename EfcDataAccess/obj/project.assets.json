@@ -1232,19 +1232,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pernille\\.nuget\\packages\\": {}
+    "C:\\Users\\soren\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pernille\\OneDrive - ViaUC\\RiderProjects\\DNP_assignment1\\EfcDataAccess\\EfcDataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\soren\\DNP_assignment1\\EfcDataAccess\\EfcDataAccess.csproj",
       "projectName": "EfcDataAccess",
-      "projectPath": "C:\\Users\\Pernille\\OneDrive - ViaUC\\RiderProjects\\DNP_assignment1\\EfcDataAccess\\EfcDataAccess.csproj",
-      "packagesPath": "C:\\Users\\Pernille\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pernille\\OneDrive - ViaUC\\RiderProjects\\DNP_assignment1\\EfcDataAccess\\obj\\",
+      "projectPath": "C:\\Users\\soren\\DNP_assignment1\\EfcDataAccess\\EfcDataAccess.csproj",
+      "packagesPath": "C:\\Users\\soren\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\soren\\DNP_assignment1\\EfcDataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pernille\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\soren\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1256,8 +1256,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Pernille\\OneDrive - ViaUC\\RiderProjects\\DNP_assignment1\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Pernille\\OneDrive - ViaUC\\RiderProjects\\DNP_assignment1\\Application\\Application.csproj"
+            "C:\\Users\\soren\\DNP_assignment1\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\soren\\DNP_assignment1\\Application\\Application.csproj"
             }
           }
         }
@@ -1302,7 +1302,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

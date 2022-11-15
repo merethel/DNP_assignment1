@@ -17,3 +17,22 @@ C:\Users\Pernille\OneDrive - ViaUC\RiderProjects\DNP_assignment1\EfcDataAccess\o
 C:\Users\Pernille\OneDrive - ViaUC\RiderProjects\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.pdb
 C:\Users\Pernille\OneDrive - ViaUC\RiderProjects\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\EfcDataAccess.runtimeconfig.json
 C:\Users\Pernille\OneDrive - ViaUC\RiderProjects\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.genruntimeconfig.cache
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\EfcDataAccess.deps.json
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\EfcDataAccess.runtimeconfig.json
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\EfcDataAccess.dll
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\ref\EfcDataAccess.dll
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\EfcDataAccess.pdb
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\Application.dll
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\Domain.dll
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\Application.pdb
+C:\Users\soren\DNP_assignment1\EfcDataAccess\bin\Debug\net6.0\Domain.pdb
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.csproj.AssemblyReference.cache
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.AssemblyInfoInputs.cache
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.AssemblyInfo.cs
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.csproj.CopyComplete
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.dll
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\ref\EfcDataAccess.dll
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.pdb
+C:\Users\soren\DNP_assignment1\EfcDataAccess\obj\Debug\net6.0\EfcDataAccess.genruntimeconfig.cache
