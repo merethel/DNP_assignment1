@@ -4,13 +4,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{B9178083-4421-4A02-B486-C676496BAF75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileData", "FileData\FileData.csproj", "{FCC757BB-0561-4899-9355-EDCCD70E3151}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{F6BE0BA5-F5B6-4AAC-8EB0-777CEA8B29EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWASM", "BlazorWASM\BlazorWASM.csproj", "{1111B965-C5B7-4693-B04C-1BAEEC1BE00F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClients", "HttpClients\HttpClients.csproj", "{82B19C12-DEA6-4B1C-9983-CCCEAE3B5F60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfcDataAccess", "EfcDataAccess\EfcDataAccess.csproj", "{5F3E288C-194C-4CCE-ADFB-DD52FC22A1BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +26,6 @@ Global
 		{B9178083-4421-4A02-B486-C676496BAF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9178083-4421-4A02-B486-C676496BAF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9178083-4421-4A02-B486-C676496BAF75}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FCC757BB-0561-4899-9355-EDCCD70E3151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCC757BB-0561-4899-9355-EDCCD70E3151}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCC757BB-0561-4899-9355-EDCCD70E3151}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCC757BB-0561-4899-9355-EDCCD70E3151}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F6BE0BA5-F5B6-4AAC-8EB0-777CEA8B29EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F6BE0BA5-F5B6-4AAC-8EB0-777CEA8B29EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6BE0BA5-F5B6-4AAC-8EB0-777CEA8B29EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,5 +38,9 @@ Global
 		{82B19C12-DEA6-4B1C-9983-CCCEAE3B5F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82B19C12-DEA6-4B1C-9983-CCCEAE3B5F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82B19C12-DEA6-4B1C-9983-CCCEAE3B5F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F3E288C-194C-4CCE-ADFB-DD52FC22A1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3E288C-194C-4CCE-ADFB-DD52FC22A1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3E288C-194C-4CCE-ADFB-DD52FC22A1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3E288C-194C-4CCE-ADFB-DD52FC22A1BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
